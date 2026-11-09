@@ -1,0 +1,5 @@
+# This machine has no Windows SDK import libraries, so the default
+# x86_64-pc-windows-msvc toolchain cannot link. The GNU toolchain (with the
+# mingw-w64 in C:\ProgramData\mingw64) does, so build for that target.
+[build]
+target = "x86_64-pc-windows-gnu"
